@@ -3,7 +3,8 @@ backend:
   branch: master
 
 local_backend: true
-logo_url: https://localsolar.io/images/logo.svg
+# change url to a link to the image you want to use, no file paths, must be a URL
+logo_url: https://d33wubrfki0l68.cloudfront.net/c89899bad974606ce0e0f5d5a95842dc787dcb56/7fe98/assets/images/logo-blue.png
 
 media_folder: 'public/images/blog'
 public_folder: '/images/blog'
