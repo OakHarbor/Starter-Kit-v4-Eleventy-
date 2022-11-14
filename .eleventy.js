@@ -4,6 +4,7 @@ module.exports = function (eleventyConfig) {
   // include css, images and cms admin files to public. without this, only html will make it to /public
   eleventyConfig.addPassthroughCopy('./src/css');
   eleventyConfig.addPassthroughCopy('./src/assets');
+  eleventyConfig.addPassthroughCopy('./src/admin');
 // a filter to format date of post to a locale string
   // used in template files like so: {{ post.date | postDate }}
   eleventyConfig.addFilter('postDate', (dateObj) => {
