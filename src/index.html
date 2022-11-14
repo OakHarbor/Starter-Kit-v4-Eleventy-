@@ -207,3 +207,16 @@ block
         <img aria-hidden="true" loading="lazy" decoding="async" src="assets/images/cabinets2.jpg" alt="kitchen cabinets" width="1920" height="1280">
         </picture>
 </section>
+
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
