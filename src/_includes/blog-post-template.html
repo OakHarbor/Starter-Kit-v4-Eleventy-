@@ -1,13 +1,14 @@
 ---
 layout: 'base.html'
-canonical: 'Official link for that page (https://www.site.com)'
-description: 'Meta description for the page'
-meta-title: 'Title that shows up on google searches'
-tagTitle: 'Company Name | What They Do | Town and State'
+eleventyComputed:
+    canonical: 'https://www.yourwebsite.com/{{ pageName }}'
+    description: "{{ blogDescription }}"
+    metaTitle: '{{ blogTitle }}'
+    tagTitle: '{{ titleTag }}'
 ---
 
 {% block preload %}
-<link rel="preload" as="image" href="/assets/images/cabinets2-m.jpg">
+<link rel="preload" as="image" href="{{/assets/images/cabinets2-m.jpg}}">
 {% endblock %}
 
 {% block pageCSS %}

@@ -4,22 +4,8 @@
 
 /* Mobile - 360px - Contains hover animation */
 @media only screen and (min-width: 0em) {
-    :root {
-        --primary: #E5572C;
-        --headerColor: #1a1a1a;
-		--bodyTextColorWhite: #FAFBFC;
-
-        /* 13px - 16px */
-        --topperFontSize: clamp(.8125rem, 1.6vw, 1rem);
-        /* 31px - 49px */
-        --headerFontSize: clamp(1.9375rem, 4.5vw, 3.0625rem);
-
-        /* 60px - 100px top and bottom */
-        --sectionPadding: clamp(3.75em, 7.82vw, 6.25em) 16/16rem;
-    }
 
     #gallery {
-        font-family: 'Roboto', 'Arial', sans-serif;
         /* Centers button */
         text-align: center;
         padding: var(--sectionPadding);
@@ -116,46 +102,6 @@
                 height: 629/16em;
             }
         }
-
-        .cs-button-solid {
-            font-size: 16/16rem;
-            /* 46px - 56px */
-            line-height: clamp(2.875em, 5.5vw, 3.5em);
-            text-decoration: none;
-	    	font-weight: 700;
-	        text-align: center;
-            margin: auto;
-            color: #fff;
-            min-width: 150/16rem;
-            padding: 0 24/16rem;
-            background-color: var(--primary);
-            border-radius: 4/16rem;
-            display: inline-block;
-            position: relative;
-            z-index: 1;
-            /* prevents padding from adding to the width */
-            box-sizing: border-box;
-
-            &:before {
-                content: '';
-                position: absolute;
-                height: 100%;
-                width: 0%;
-                background: #000;
-                opacity: 1;
-                top: 0;
-                left: 0;
-                z-index: -1;
-                border-radius: 4/16rem;
-                transition: width .3s;
-            }
-
-            &:hover {
-                &:before {
-                    width: 100%;
-                }
-            }
-        }
     }
 }                           
 
@@ -167,7 +113,7 @@
 @media only screen and (min-width: 0em) {
     #cta {
         position: relative;
-        padding: 50/16em 0;
+        padding: 50/16rem 0;
 
         &:before {
             content: '';
@@ -206,11 +152,11 @@
 
         .title {
             font-weight: 900;
-            font-size:~"min(9vw, 3em)";
+            font-size:~"min(9vw, 3rem)";
             line-height: 58/48;
             color: #fff;
             position: relative;
-            margin-bottom: 36/48em;
+            margin-bottom: 36/16rem;
             text-align: center;
         }
 
@@ -219,9 +165,9 @@
             text-align: center;
             opacity: 1;
             margin: auto;
-            margin-bottom: 36/18em;
+            margin-bottom: 36/16rem;
             width: 96%;
-            max-width: 598/18em;
+            max-width: 598/16rem;
 
         }
     }
@@ -230,7 +176,7 @@
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
     #cta {
-        padding: 168/16em 0;
+        padding: 168/16rem 0;
     }
 }
 
@@ -238,7 +184,7 @@
 @media only screen and (min-width: 1300px) {
     #cta {
         position: relative;
-        margin-top: 100/16em;
+        margin-top: 100/16rem;
         &:before {
             display: none;
         }
@@ -246,9 +192,9 @@
             content: '';
             position: absolute;
             display: block;
-            height: 1108/16em;
-            width: 2000/16em;
-            background: url("../images/cta-squares.svg");
+            height: 1108/16rem;
+            width: 2000/16rem;
+            background: url("..assets/images/cta-squares.svg");
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;

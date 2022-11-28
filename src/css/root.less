@@ -13,6 +13,14 @@
         --bodyTextColor: #4E4B66;
         --bodyTextColorWhite: #FAFBFC;
         --headerColor: #1a1a1a;
+
+        /* 13px - 16px */
+        --topperFontSize: clamp(.8125rem, 1.6vw, 1rem);
+        /* 31px - 49px */
+        --headerFontSize: clamp(1.9375rem, 4.5vw, 3.0625rem);
+
+        /* 60px - 100px top and bottom */
+        --sectionPadding: clamp(3.75em, 7.82vw, 6.25em) 16/16rem;
     }
 
     // Grab your fonts to locally host from https://google-webfonts-helper.herokuapp.com/fonts
@@ -76,7 +84,7 @@
     }
     
     p, li, a {
-        font-size: 18/16em;
+        font-size: 18/16rem;
         line-height: 27/18em;
         margin: 0;
     }
@@ -93,16 +101,16 @@
     
     // Buttons
     .button-solid {
-        font-size: 14/16em;
+        font-size: 16/16rem;
         font-weight: bold;
         text-transform: uppercase;
         text-decoration: none;
         display: inline-block;
         width: auto;
-        line-height: 50/14em;
-        height: 50/14em;
+        line-height: 50/16em;
+        height: 50/16rem;
         text-align: center;
-        padding: 0 30/14em;
+        padding: 0 30/16rem;
         position: relative;
         z-index: 1;
         background-color: var(--primary);
@@ -188,14 +196,14 @@
         }
 
         .container {
-            padding: 13/16em 0;
+            padding: 13/16rem 0;
             width: 96%;
         }
 
         // Logo
         .logo {
             display: inline-block;
-            height: 30/16em ;
+            height: 30/16rem ;
             width: auto;
 
             img {
@@ -215,10 +223,10 @@
         // Hamburger Menu Default State
         .hamburger-menu {
             position: absolute;
-            right: 0/16em;
+            right: 0/16rem;
             border: none;
-            height: 48/16em;
-            width: 48/16em;
+            height: 48/16rem;
+            width: 48/16rem;
             z-index: 100;
             display: block;
             background: transparent;
@@ -229,7 +237,7 @@
 
             span {
                 height: 2px;
-                width: 30/16em;
+                width: 30/16rem;
                 background-color: #000;
                 display: block;
                 position: absolute;
@@ -302,7 +310,7 @@
             overflow: hidden;
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
             background-color: #fff;
-            top: 64/16em; // same as #navigation height
+            top: 64/16rem; // same as #navigation height
 
             //Transition Properties
             padding-top: 0;
@@ -315,12 +323,12 @@
                 perspective: 700px;
                 li {
                     list-style: none;
-                    margin-bottom: 24/16em;
+                    margin-bottom: 24/16rem;
                     text-align: center;
                     //Transition Properties
                     transform-style: preserve-3d;
                     opacity: 0;
-                    transform: translateY(-7/16em) rotateX(90deg);
+                    transform: translateY(-7/16rem) rotateX(90deg);
                     transition: opacity .5s, transform .5s;
 
                     //Staggar their transitions
@@ -343,7 +351,7 @@
                         text-decoration: none;
                         text-transform: uppercase;
                         color: #000;
-                        font-size: 19/16em;
+                        font-size: 19/16rem;
                         text-align: center;
                         display: inline-block;
                         position: relative;
@@ -355,13 +363,13 @@
                                 content: '';
                                 position: absolute;
                                 display: block;
-                                height: 8/19em;
+                                height: 8/16rem;
                                 background: var(--primary);
                                 opacity: 1;
-                                bottom: 5/19em;
-                                border-radius: 4/19em;
-                                left: -6/19em;
-                                right: -6/19em;
+                                bottom: 5/1rem;
+                                border-radius: 4/16rem;
+                                left: -6/16rem;
+                                right: -6/16rem;
                                 z-index: -1;
                             }
                         }
@@ -372,8 +380,8 @@
 
         // Navbar Menu Open State
         #navbar-menu.open {
-            height: 306/16em;
-            padding-top: 20/16em;
+            height: 306/16rem;
+            padding-top: 20/16rem;
             z-index: -100;
 
             ul {
@@ -459,7 +467,7 @@
     // Navigation Styles
     #navigation {
         width: 100%;
-        height: 100/16em;
+        height: 100/16rem;
         position: fixed;
         top: 0;
         left: 0;
@@ -481,7 +489,7 @@
         }
 
         .container {
-            max-width: 1200/16em;
+            max-width: 1200/16rem;
             display: flex;
             // Forces all elements to the right
             justify-content: flex-end;
@@ -492,7 +500,7 @@
         .logo {
             // Margin-right: auto Pushes everything away from the right, nudging it to the left and pushing everyting to the right
             margin-right: auto;
-            height: 60/16em;
+            height: 60/16rem;
             width: auto;
 
             img {
@@ -511,8 +519,8 @@
 
                 li {
                     list-style: none;
-                    margin-left: 30/16em;
-                    padding-top: 3/16em;
+                    margin-left: 30/16rem;
+                    padding-top: 3/16rem;
 
                     a {
                         text-decoration: none;
@@ -530,11 +538,11 @@
                             content: '';
                             position: absolute;
                             display: block;
-                            height: 6/19em;
-                            border-radius: 3/19em;
+                            height: 6/16rem;
+                            border-radius: 3/16rem;
                             background: var(--primary);
                             opacity: 1;
-                            bottom: 2/19em;
+                            bottom: 2/16rem;
                             z-index: -1;
                             left: 0;
         
@@ -556,13 +564,13 @@
                                 position: absolute;
                                 display: block;
                                 width: 100%;
-                                height: 6/19em;
+                                height: 6/16rem;
                                 background: var(--primary);
                                 opacity: 1;
-                                bottom: 2/19em;
-                                border-radius: 3/19em;
-                                left: 0/19em;
-                                right: -6/19em;
+                                bottom: 2/16rem;
+                                border-radius: 3/16rem;
+                                left: 0/16rem;
+                                right: -6/16rem;
                                 z-index: -1;
 
                                 // Transition Properties
@@ -692,7 +700,7 @@
         position: relative;
         z-index: 1;
         min-height: 30vh;
-        padding-top: 50/16em;
+        padding-top: 50/16rem;
 
         &:before {
             content: '';
@@ -727,22 +735,22 @@
 
         h1 {
             color: #fff;
-            font-size: 64/30em;
+            font-size: 64/30rem;
             text-align: center;
             margin: 0 auto;
             position: relative;
             width: 96%;
-            max-width: 500/64em;
-            margin-top: 70/64em;
-            margin-bottom: 30/64em;
+            max-width: 500/16rem;
+            margin-top: 70/16rem;
+            margin-bottom: 30/16rem;
         }
 
         p {
             color: #fff;
             text-align: center;
-            max-width: 400/18em;
+            max-width: 400/16rem;
             margin: auto;
-            margin-bottom: 30/18em;
+            margin-bottom: 30/16rem;
             display: block;
             width: 96%;
         }
@@ -754,10 +762,10 @@
 @media only screen and (min-width: 48em) {
 
     #int-hero {
-        font-size: 16px;
+        font-size: 100%;
 
         h1 {
-            font-size: 64/16em;
+            font-size: 64/16rem;
         }
     }
 }
@@ -766,10 +774,10 @@
 @media only screen and (min-width: 64em) {
 
     #int-hero {
-        min-height: 300/16em;
+        min-height: 300/16rem;
         height: auto;
-        padding-top: 180/16em;
-        padding-block-end: 100/16em;
+        padding-top: 180/16rem;
+        padding-block-end: 100/16rem;
         background-attachment: fixed;
         font-size: inherit;
     }
@@ -784,12 +792,12 @@
 
     #footer {
         background: #1C1C1C;
-        padding: 84/16em 0 20/16em;
+        padding: 84/16rem 0 20/16rem;
         font-size:~"min(4vw, 1.2em)";
 
         .left-section {
             margin: auto;
-            margin-bottom: 50/16em;
+            margin-bottom: 50/16rem;
             text-align: center;
             .logo {
                 display: inline-block;
@@ -807,27 +815,27 @@
             }
     
             p {
-                font-size: 14/16em;
+                font-size: 14/16rem;
                 line-height: 27/14;
                 color: #fff;
 				opacity: .9;
                 text-align: center;
                 width: 100%;
-                width: 307/14em;
+                width: 307/14rem;
                 margin: auto;
             }
         }
 
         .right-section {
             width: 96%;
-            max-width: 407/16em;
+            max-width: 407/16rem;
             margin: auto;
             .lists {
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
                 width: 96%;
-                max-width: 307/16em;
+                max-width: 307/16rem;
                 margin: auto;
                 ul {
                     padding: 0;
@@ -835,12 +843,12 @@
                     margin-top: 0;
 
                     &:nth-of-type(3) {
-                        margin-top: 50/16em;
+                        margin-top: 50/16rem;
                         li {
                             display: flex;
                             justify-content: flex-start;
                             align-items: center;
-                            margin-bottom: 16/18em;
+                            margin-bottom: 16/16rem;
 
                             &:last-of-type {
                                 margin-bottom: 0;
@@ -850,15 +858,15 @@
 
                     li {
                         list-style: none;
-                        margin-bottom: 12/18em;
+                        margin-bottom: 12/16rem;
 						color: #fff;
-						font-size: 18/18em;
+						font-size: 18/16rem;
 						opacity: .9;
                         
                         a {
                             text-decoration: none;
                             color: #fff;
-                            line-height: 21/18;
+                            line-height: 21/18em;
 							transition: color .3s;
 							&:hover {
 								color: var(--primary);
@@ -867,9 +875,9 @@
                     }
                     h2 {
                         color: #fff;
-                        font-size: 18/16em;
-                        line-height: 21/18;
-                        margin-bottom: 37/18em;
+                        font-size: 18/16rem;
+                        line-height: 21/18em;
+                        margin-bottom: 37/16rem;
 						text-transform: uppercase;
 						font-weight: bold;
 						position: relative;
@@ -878,11 +886,11 @@
 							content: '';
 							position: absolute;
 							display: block;
-							height: 2/18em;
-							width: 97/18em;
-							background: #EEBE76;
+							height: 2/16rem;
+							width: 97/16rem;
+							background: var(--primary);
 							opacity: 1;
-							bottom: -16/18em;
+							bottom: -16/16rem;
 							left: 0;
 						}
                     }
@@ -896,9 +904,9 @@
     
             .button-solid {
                 margin: 0;
-                height: 53/18em;
-                padding-top: 3/18em;
-                width: 250/18em;
+                height: 53/16rem;
+                padding-top: 3/16rem;
+                width: 250/16rem;
             }
         }
 
@@ -907,14 +915,14 @@
 			width: 96%;
 			margin: auto;
 			text-align: center;
-			margin-top: 100/16em;
-			line-height: 36/16em;
-			font-size: 16/16em;
+			margin-top: 100/16rem;
+			line-height: 36/16rem;
+			font-size: 16/16rem;
 
 			a {
 				color: var(--primary);
 				text-decoration: none;
-				font-size: 16/16em;
+				font-size: 16/16rem;
 
 				&:hover {
 					text-decoration: underline;
@@ -923,7 +931,7 @@
 
 			.copyright {
 				display: block;
-				font-size: 16/16em;
+				font-size: 16/16rem;
 			}
 		}
     }
@@ -941,20 +949,20 @@
             flex-wrap: nowrap;
             justify-content: space-between;
             width: 96%;
-            max-width: 1320/16em;
+            max-width: 1320/16rem;
             margin: auto;
             padding: 0;
         }
 
         .left-section {
-            width: 409/16em;
+            width: 409/16rem;
             margin: 0;
             text-align: left;
 
             .logo {
                 text-align: left;
 				margin-left: 0;
-                height: 70/16em;
+                height: 70/16rem;
             }
 
             p {
@@ -965,11 +973,11 @@
 
         .right-section {
             margin: 0;
-            width: 609/16em;
+            width: 609/16rem;
             max-width: none;
             .lists {
                 width: 96%;
-                max-width: 769/16em;
+                max-width: 769/16rem;
                 margin: 0;
                 max-width: initial;
 
@@ -990,11 +998,11 @@
                                 content: '';
                                 position: absolute;
                                 display: block;
-                                height: 2/18em;
+                                height: 2/16rem;
                                 width: 0%;
                                 background: var(--primary);
                                 opacity: 1;
-                                bottom: -3/18em;
+                                bottom: -3/16rem;
                                 left: 0;
                                 transition: width .3s;
                             }
